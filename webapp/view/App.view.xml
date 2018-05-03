@@ -1,79 +1,9 @@
 <mvc:View 
-	controllerName="Project.controller.Contact" 
+	controllerName="LicensedToCode.controller.App" 
     xmlns:html="http://www.w3.org/1999/xhtml" 
 	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns:l="sap.ui.layout"
-	xmlns:f="sap.ui.layout.form"
-	height="100%"
+	displayBlock="true"
 	xmlns="sap.m">
-	<Page class="colorBack">
-		<customHeader>
-			<Bar design="Header">
-				<contentLeft>
-					<Image src="assets/logo-trans.png" height="45px"/>
-				</contentLeft>
-			<contentRight>
-				<OverflowToolbar>
-					<ToggleButton icon="sap-icon://menu2"></ToggleButton>
-				</OverflowToolbar>
-			</contentRight>
-		</Bar>
-		</customHeader>
-		<content>
-			<html:div class="contact">
-				<VBox class="box1 flexContainer">
-					<Text text="CONTACT US" class="text1 colorText"/>
-					<Text text="We are just behind your Screen" class="text2 colorText"/>
-				</VBox>
-			</html:div>
-			<VBox class="flexContainer box2">
-				<Text text="Looking for more information about LTC, or want to incquire about our services?" class="texts colorText" />
-				<Text text="You have come to the right place." class="texts colorText"/>
-			</VBox>
-			<l:FixFlex vertical="false" fixContentSize="450px" class="fixflexBox flexContainer">
-				<l:fixContent>
-					<f:SimpleForm class="leftFix">
-						<Text text="Contact Form" class="textSize1 colorText center" />
-						<Label />
-						<Input type="Text" placeholder="Full Name" class="textSize2"/>
-						<Label />
-						<Input type="Email" placeholder="Email Address" class="textSize2"/>
-						<Label />
-						<Input type="Text" placeholder="Company" class="textSize2"/>
-						<Label />
-						<Input type="Tel" placeholder="Phone Number" class="textSize2"/>
-						<Label />
-						<Text text="Drop Us a Line here!" class="textSize2"/>
-						<Label />
-						<Input type="Text" placeholder="Message" class="heiht"/>
-						<Label />
-						<Button type="Accept" text="Submit" />
-					</f:SimpleForm>
-				</l:fixContent>
-				<l:flexContent>
-					<VBox class="flexRight">
-					<Text text="Contact Info" class="textSize1"/>
-					<Text text="Mailing Address: " class="textSize2"/>
-					<Text text="TEL" class="textSize2"/>
-					<Text text="FAX" class="textSize2"/>
-					<Text text="Email: " class="textSize2"/>
-					<html:iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25219.150411429375!2d-122.40550400000001!3d37.804244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f76856f1c5%3A0x7009ddffa5a7eb22!2s111+Chestnut+St%2C+San+Francisco%2C+CA+94111%2C+USA!5e0!3m2!1sen!2snp!4v1525164684920" width="70%" height="340" frameborder="0" style="border:0" allowfullscreen="true" class="padding"></html:iframe>
-					</VBox>
-				</l:flexContent>
-			</l:FixFlex>
-			<VBox>
-				<Text text="Saty Connected and get the updates!" class="center textSize" />
-				<HBox>
-					<Button class="fa fa-facebook" />
-				</HBox>
-			</VBox>
-		</content>
-	</Page>
-	<!--<Footer>-->
-	<!--		<Bar>-->
-	<!--			<contentMiddle>-->
-	<!--				<Text text="Copyright 2018" />-->
-	<!--			</contentMiddle>-->
-	<!--		</Bar>-->
-	<!--	</Footer>-->
+	<App id="app" >	
+		</App>
 </mvc:View>

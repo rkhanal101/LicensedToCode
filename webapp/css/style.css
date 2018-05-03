@@ -1,0 +1,230 @@
+/*for the html*/
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+html{
+	overflow:scroll;
+}
+/*parallax for home page*/
+.parallax {
+    /* The image used */
+    background-image: url("../assets/background.png");
+    /* Set a specific height */
+    min-height: 100%;
+    min-width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--------------------------------Contacu Us Page-------------------------------------*/
+.flexContainer{
+	display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+	align-items:center;
+	justify-content:center;
+}
+.colorBack{
+	/*background-color:#D0D0D0;*/
+	/*background-color:#e6f9ff;*/
+	background-color:#abcdef;
+}
+.colorText{
+	color:#000000;
+}
+.center{
+	text-align:center;
+}
+/*Parallax for Contact Page*/
+.contact{                  
+	background-image: url("../assets/ContactBakground.png");
+	min-height: 100%;
+	min-width:100%;
+	opacity:0.9;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+/* Texts on the image in Parallax of Contact page */
+.box1{
+	padding-top:30%;
+}
+.text1{
+	font-size: 60px;
+}
+.text2{
+	font-size: 45px;
+}
+/* VBox just below the parallax image */
+.box2{
+	margin-top:15px;
+}
+.texts{
+	font-size:20px;
+}
+/* FixFlex Box */
+.fixflexBox{
+	padding-top:5%;
+}
+.leftFix{
+	padding-left:50px;
+}
+.flexRight{
+	padding-left:200px;
+}
+.textSize1{
+	font-size:25px;
+}
+.textSize2{
+	font-size:18px;
+}
+.padding{
+	padding-left:40px;
+	/*padding-top:;*/
+}
+.margin{
+	/*margin-top:5%;*/
+	/*margin-left:100px;*/
+	margin:auto;
+}
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+.logos-list{
+	width:100%;
+	/*margin-top:30px;*/
+	max-width:100%;
+	height:20%;
+	/*overflow:hidden;*/
+	display: flex;
+    flex-wrap:nowrap;
+	background-color:blue;
+}
+.divs1{
+	left: 76px;
+	text-align: center;
+	vertical-align: middle;
+}
+.divs{
+	left: 76px;
+	text-align: center;
+	vertical-align: middle;
+}
+.link1 {
+    position: relative;
+    /*top: 16px;*/
+    left: 76px;
+    width:85px;
+    height:85px;
+    float:left;
+    vertical-align:baseline;
+}
+.link2 {
+    position: relative;
+    top: 32px;
+    left: 106px;
+    width:140px;
+    height:auto;
+    float:left;
+    vertical-align:baseline;
+}
+.link3 {
+    position: relative;
+    top: 29px;
+    left: 182px;
+    width:138px;
+    height:auto;
+    float:left;
+    vertical-align:baseline;
+}
+.link4 {
+   position: relative;
+    top: 26px;
+    left: 256px;
+    width: auto;
+    height: auto;
+    opacity: 0.8;
+    float: left;
+    vertical-align: baseline;
+}
+.link5 {
+    position: relative;
+    top: 36px;
+    left: 416px;
+    width: 110px;
+    height: auto;
+    float: left;
+    vertical-align: baseline;
+}
+.link6 {
+    position: relative;
+    /*top: 16px;*/
+    left: 476px;
+    width:95px;
+    height:auto;
+    opacity:1;
+    float:left;
+    vertical-align:baseline;
+}
+.link7 {
+    position: absolute;
+    bottom: 36px;
+    left: 1066px;
+    width:85px;
+    height:85px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
