@@ -27,11 +27,6 @@ html{
 	align-items:center;
 	justify-content:center;
 }
-.colorBack{
-	/*background-color:#D0D0D0;*/
-	/*background-color:#e6f9ff;*/
-	background-color:#abcdef;
-}
 .colorText{
 	color:#000000;
 }
@@ -71,7 +66,8 @@ html{
 	padding-top:5%;
 }
 .leftFix{
-	padding-left:50px;
+	margin:auto;
+	background-color:orange;
 }
 .flexRight{
 	padding-left:200px;
@@ -87,16 +83,29 @@ html{
 	/*padding-top:;*/
 }
 .margin{
-	/*margin-top:5%;*/
-	/*margin-left:100px;*/
 	margin:auto;
 }
+.styleButton{
+	float:right;
+	border-radius:100px;
+}
+.transition{
+	-webkit-transition: width 2s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.hover{
+	 width: 300px;
+}
 .fa {
+  padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .fa:hover {

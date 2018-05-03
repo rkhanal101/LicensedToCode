@@ -6,7 +6,7 @@
 	xmlns:f="sap.ui.layout.form"
 	height="100%"
 	xmlns="sap.m">
-	<Page class="colorBack">
+	<Page>
 		<customHeader height="100px">
 			<Bar design="Header">
 				<contentLeft>
@@ -32,26 +32,35 @@
 			</VBox>
 			<l:FixFlex vertical="false" fixContentSize="450px" class="fixflexBox flexContainer">
 				<l:fixContent>
-					<f:SimpleForm class="leftFix">
-						<Text text="Contact Form" class="textSize1 colorText center" />
-						<Label/><Input type="Text" placeholder="Full Name" class="textSize2"/>
-						<Label/><Input type="Email" placeholder="Email Address" class="textSize2"/>
-						<Label/><Input type="Text" placeholder="Company" class="textSize2"/>
-						<Label/><Input type="Tel" placeholder="Phone Number" class="textSize2"/>
-						<Label/><Text text="Drop Us a Line here!" class="textSize2"/>
-						<Label/><Input type="Text" placeholder="Message" class="heiht"/>
-						<Label/><Button type="Accept" text="Submit" />
+					<f:SimpleForm id="idCreateUserForm"
+   					  editable="true" 
+   					  class="leftFix"
+   					  layout="ResponsiveGridLayout" 
+					  labelSpanL="3" labelSpanM="3"  
+					  emptySpanL="4" emptySpanM="4" columnsL="1" 
+					  columnsM="1">
+   						<f:content>
+   							<Text text="Contact Form" class="textSize1 colorText" />
+   							<Label/>
+							<Input id="addusername" type="Text" placeholder="Full Name" />
+							<Label/>
+							<Input id="addaddress" type="Email" placeholder="Email" />
+							<Label/>
+							<Input id="addphone" type="Text" placeholder="Company" />
+							<Label/>
+							<Button width="100px" class="styleButton" text="Submit" type="Emphasized" press="onAdd" />
+						</f:content>
 					</f:SimpleForm>
 				</l:fixContent>
 				<l:flexContent>
 					<VBox class="flexRight">
-					<Text text="Contact Info" class="textSize1 padding"/>
-					<Text text="Mailing Address: " class="textSize2 padding"/>
-					<Text text="111 Chestnut Street" class="textSize2 padding" />
-					<Text text="San Francisco, CA 94111" class="padding" />
-					<Text text="TEL: 415-613-8810" class="textSize2 padding"/>
-					<Text text="FAX: 415-291-9651" class="textSize2 padding"/>
-					<Text text="Email: info@licensedtocode.com" class="textSize2 padding"/>
+						<Text text="Contact Info" class="textSize1 padding"/>
+						<Text text="Mailing Address: " class="textSize2 padding"/>
+						<Text text="111 Chestnut Street" class="textSize2 padding" />
+						<Text text="San Francisco, CA 94111" class="padding" />
+						<Text text="TEL: 415-613-8810" class="textSize2 padding"/>
+						<Text text="FAX: 415-291-9651" class="textSize2 padding"/>
+						<Text text="Email: info@licensedtocode.com" class="textSize2 padding"/>
 					<HBox class="center padding">
 						<Link href="#" class="fa fa-facebook" />
 						<Link href="#" class="fa fa-google" />
@@ -72,5 +81,4 @@
 			</Bar>
 		</footer>
 	</Page>
-	
 </mvc:View>
